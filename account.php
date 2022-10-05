@@ -15,10 +15,10 @@ if (empty($_SESSION['logged_in'])) {
 			<div class="col-12 text-center py-3">
 				<?php
 				if ($_GET['result'] == "success") { ?>
-					<p class="text-success">Your account updated successfully.</p>
+					<p class="text-success">Sua conta foi atualizada com sucesso.</p>
 				<?php
 				} else if ($_GET['result'] == "fail") { ?>
-					<p class="text-danger">Update failed.</p>
+					<p class="text-danger">A atualização falhou.</p>
 				<?php
 				} ?>
 			</div>

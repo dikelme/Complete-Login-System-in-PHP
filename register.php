@@ -61,7 +61,7 @@ if (!isset($_POST['register'])) {
 			}
 
 			if ($password != $password_2) {
-				die("Passwords don't match. Please try again.<br> <a href='index.php'>Register</a>");
+				die("Senha incorreta. Tente novamente.<br> <a href='index.php'>Register</a>");
 			}
 
 			validateDateOfBirth($date, 'register');
@@ -73,7 +73,7 @@ if (!isset($_POST['register'])) {
 
 			// Check if user exists already
 			if (userExists($username, $email)) {
-				die("<p>User already exists.</p> <a href='index.php'>Go back to login</a>");
+				die("<p>O usuário já existe.</p> <a href='index.php'>Go back to login</a>");
 			}
 
 			// Register user if does not exist

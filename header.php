@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-gradient">
 	<div class="container-fluid p-0 bg-dark border-bottom">
 		<div class="container">
 			<div class="row">

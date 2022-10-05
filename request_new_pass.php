@@ -16,7 +16,7 @@
 			if (isset($_POST['reset']) && isset($_POST['reset_email'])) {
 
 				if (empty($_POST['reset_email'])) {
-					die("Email is missing.");
+					die("Email ausente.");
 				}
 
 				$query = "update User set ResetPasswordHash = ? where Email = ?";
@@ -33,10 +33,10 @@
 						include 'inc/reset_pass_email.php';
 						resetPasswordEmail($email, $resetPasswordHash);
 					} else {
-						echo "The email <b>" . $email . "</b> does not exist in the database.";
+						echo "O email <b>" . $email . "</b> não existe no banco de dados.";
 					}
 				} else {
-					echo "Error in sql query: <i>" . $stmt->error . "</i>";
+					echo "Erro no sql query: <i>" . $stmt->error . "</i>";
 				}
 			}
 

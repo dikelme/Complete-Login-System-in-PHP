@@ -17,10 +17,10 @@ $(".show-pass").click(function () {
 
     if ($(pass_field).attr("type") === "password") {
         $(pass_field).attr("type", "text");
-        $(label).text("Hide password");
+        $(label).text("Esconder senha");
     } else {
         $(pass_field).attr("type", "password");
-        $(label).text("Show password");
+        $(label).text("Mostrar senha");
     }
 });
 
@@ -39,7 +39,7 @@ if (window.matchMedia("(max-width: 767px)").matches) {
 }
 
 $("#deleteAccount").click(function () {
-    if (!confirm("Are you sure you want to delete your account?")) {
+    if (!confirm("Você tem certeza que deseja excluir sua conta?")) {
         return false;
     }
 });
