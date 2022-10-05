@@ -22,14 +22,14 @@ if (isset($_GET['action'])) {
 		<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 			<form action="index.php" method="post" class="needs-validation" novalidate>
 				<div class="form-group">
-					<label for="username">Username</label>
-					<input type="text" class="form-control" id="username" placeholder="Enter username or email" name="myusername" required>
+					<label for="username">Nome</label>
+					<input type="text" class="form-control" id="username" placeholder="Seu nome de usuário ou email" name="myusername" required>
 				</div>
 				<div class="form-group">
-					<label for="password">Password</label>
-					<input type="password" class="form-control" id="password" placeholder="Enter password" name="mypass" required>
+					<label for="password">Senha</label>
+					<input type="password" class="form-control" id="password" placeholder="Sua senha" name="mypass" required>
 				</div>
-				<button type="submit" class="btn btn-info mx-auto d-block w-100" name="submit">Login</button>
+				<button type="submit" class="btn btn-info mx-auto d-block w-100 bg-primary" name="submit">Entrar</button>
 			</form>
 		</div>
 	</div>
@@ -38,53 +38,53 @@ if (isset($_GET['action'])) {
 		<div class="col-12 col-md-6 col-lg-4 py-3">
 			<div class="d-flex justify-content-center">
 				<a id="registerBtn" class="btn btn-link" data-toggle="collapse" href="#register" role="button" aria-expanded="false" aria-controls="register">
-					Register
+					Registrar
 				</a>
 				<a id="resetBtn" class="btn btn-link" data-toggle="collapse" href="#resetPassword" role="button" aria-expanded="false" aria-controls="resetPassword">
-					Forgot Password
+					Esqueci a senha
 				</a>
 			</div>
 
 			<div class="collapse mt-4" id="register">
 				<div class="card">
 					<div class="card-header">
-						<h5 class="m-0">New User</h5>
+						<h5 class="m-0">Novo usuário</h5>
 					</div>
 					<div class="card-body">
 						<form action="register.php" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
 							<div class="form-group">
-								<label for="r_username">Username</label>
-								<input type="text" class="form-control" id="r_username" placeholder="Enter name" name="r_username" required>
+								<label for="r_username">Usuário</label>
+								<input type="text" class="form-control" id="r_username" placeholder="Insira o usuário" name="r_username" required>
 							</div>
 
 							<div class="form-group">
 								<label for="r_email">Email</label>
-								<input type="email" class="form-control" id="r_email" placeholder="Enter email" name="r_email" required>
+								<input type="email" class="form-control" id="r_email" placeholder="Insira o email" name="r_email" required>
 							</div>
 
 							<div class="form-group">
-								<label for="r_pass">Password</label>
-								<input type="password" class="form-control" id="r_pass" placeholder="Enter password" name="r_pass" required>
-								<p class="mt-2 text-info show-pass">Show password</p>
+								<label for="r_pass">Senha</label>
+								<input type="password" class="form-control" id="r_pass" placeholder="Insira a senha" name="r_pass" required>
+								<p class="mt-2 text-info show-pass">Mostrar senha</p>
 							</div>
 
 							<div class="form-group">
-								<label for="r_pass_2">Repeat Password</label>
-								<input type="password" class="form-control" id="r_pass_2" placeholder="Repeat password" name="r_pass_2" required>
-								<p class="mt-2 text-info show-pass">Show password</p>
+								<label for="r_pass_2">Repita a senha</label>
+								<input type="password" class="form-control" id="r_pass_2" placeholder="Repita a senha" name="r_pass_2" required>
+								<p class="mt-2 text-info show-pass">Mostrar senha</p>
 							</div>
 
 							<div class="form-group">
-								<label for="r_date">Date of Birth</label>
+								<label for="r_date">Data de nascimento</label>
 								<input type="date" class="form-control" id="r_date" name="r_dateofbirth" required>
 							</div>
 
 							<div class="form-group">
-								<label for="r_photo">Photo</label>
+								<label for="r_photo">Foto de perfil</label>
 								<input type="file" id="r_photo" name="r_photo" class="w-100" accept=".jpg, .jpeg, .png">
 							</div>
 
-							<button type="submit" class="btn btn-warning mx-auto d-block" name="register">Register</button>
+							<button type="submit" class="btn btn-warning mx-auto d-block" name="register">Registrar</button>
 						</form>
 					</div>
 				</div>
@@ -93,15 +93,15 @@ if (isset($_GET['action'])) {
 			<div class="collapse mt-4" id="resetPassword">
 				<div class="card">
 					<div class="card-header">
-						<h5 class="m-0">Password Reset</h5>
+						<h5 class="m-0">Alterar senha</h5>
 					</div>
 					<div class="card-body">
 						<form action="request_new_pass.php" method="post" class="needs-validation" novalidate>
 							<div class="form-group">
 								<label for="reset_email">Email</label>
-								<input type="email" class="form-control" id="reset_email" placeholder="Enter email" name="reset_email" required>
+								<input type="email" class="form-control" id="reset_email" placeholder="Insira o email" name="reset_email" required>
 							</div>
-							<button type="submit" class="btn btn-danger mx-auto d-block" name="reset">Reset Password</button>
+							<button type="submit" class="btn btn-danger mx-auto d-block" name="reset">Alterar senha</button>
 						</form>
 					</div>
 				</div>

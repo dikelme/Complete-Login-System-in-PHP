@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Admin Panel</title>
+	<title>Faça login</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -11,11 +11,11 @@
 </head>
 
 <body>
-	<div class="container-fluid p-0 bg-light border-bottom">
+	<div class="container-fluid p-0 bg-dark border-bottom">
 		<div class="container">
 			<div class="row">
-				<nav class="navbar navbar-expand-lg navbar-light w-100 justify-content-between">
-					<a class="navbar-brand" href="/">Admin</a>
+				<nav class="navbar navbar-expand-lg navbar-dark w-100 justify-content-between">
+					<a class="navbar-brand" href="/">Fazer login</a>
 
 					<?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) { ?>
 						<div class="d-flex flex-column align-items-center">
